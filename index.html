@@ -158,9 +158,9 @@
       ARALLITH
     </div>
     <div class="navlinks">
-      <a href="#">ПРОБЛЕМА</a>
-      <a href="#">ТЕХНОЛОГИЯ</a>
-      <a href="#">ИИ-КАРТА</a>
+      <a href="https://strange-gecko-371577.framer.app/#feature">ПРОБЛЕМА</a>
+      <a href="https://strange-gecko-371577.framer.app/#pricing">ТЕХНОЛОГИЯ</a>
+      <a href="https://strange-gecko-371577.framer.app/contact">ИИ-КАРТА</a>
       <a href="#" class="active">ПАНЕЛЬ МОНИТОРИНГА</a>
     </div>
     <button class="cta-slash">/Try DEMO</button>
@@ -481,7 +481,7 @@ const logPool = [
   'Rover-02 отклонён от маршрута (препятствие)',
   'Пересчёт маршрутов для сектора C-4',
   'Раствор: концентрация 1.25 (оптимальная)',
-  'Rover-04: рекомендована подзарядка',
+  'Rover-04: рекомендована подзарядка',  
   'Точка биоцементации B-2 подтверждена',
   'Обновлён прогноз покрытия на 7 дней',
   'Rover-03 завершил объезд сектора A-2',
@@ -543,8 +543,8 @@ document.getElementById('stats-grid').innerHTML = stats.map(s => `
    lives only on the proxy server, in its environment variables.
    This file just calls the proxy; the proxy calls OpenAI.
    ============================================================ */
-const USE_REAL_API = false;
-const PROXY_URL = "https://YOUR-PROXY-URL.vercel.app/api/ask"; // <- replace after deploying arallith-ai-proxy.js
+const USE_REAL_API = true;
+const PROXY_URL = "https://arallith-proxy.vercel.app/api/ask"; // <- replace after deploying arallith-ai-proxy.js
 
 function localAnswer(q){
   const s = q.toLowerCase();
